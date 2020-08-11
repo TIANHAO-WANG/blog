@@ -78,20 +78,24 @@ The last line expresses the convexity of $I(Q)$.
 Mutual information $I(X, Y)$ can be viewed as a bivariate function $f(x, y)$ where $x=P_X$ and $y=P_{Y|X}$ (channel), which is both concave in $x$ and convex in $y$. We show that the channel capacity $C(P_{Y|X})=\max_{P_X}f(P_X, P_{Y|X})$ is a function that is concave in $P_{Y|X}$. 
 
 Let $g(y)=\max_x f(x, y)$, then for all $\lambda \in (0, 1)$ we have 
+$$
 \begin{align}
 g(\lambda y_1 + (1-\lambda) y_2) &= f(x^*, \lambda y_1 + (1-\lambda)y_2) \\
 &\le \lambda f(x^*, y_1) + (1-\lambda)f(x^*, y_2) \\
 &\le \lambda f(x_1^*, y_1) + (1-\lambda)f(x_2^*, y_2) \\
 &= \lambda g(y_1) + (1-\lambda)g(y_2)
 \end{align}
+$$
 
 where 
 
+$$
 \begin{align}
 x^* &= arg\max_{x} f(x, \lambda y_1 + (1-\lambda)y_2) \\
 x_1^* &= arg\max_{x} f(x, y_1) \\
 x_2^* &= arg\max_{x} f(x, y_2)
 \end{align}
+$$
 
  
 
